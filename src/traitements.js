@@ -1,6 +1,6 @@
 class Aliment {
     constructor(quantite, calories, lipides, grasSat, grasTrans,
-        glucides, fibres, sucres, proteines, cholesterol, sodium, calcium, fer) {
+        glucides, fibres, sucres, proteines, cholesterol, sodium, potassium, calcium, fer) {
         this.quantite = quantite;
         this.calories = calories;
         this.lipides = lipides;
@@ -12,6 +12,7 @@ class Aliment {
         this.proteines = proteines;
         this.cholesterol = cholesterol;
         this.sodium = sodium;
+        this.potassium = potassium;
         this.calcium = calcium;
         this.fer = fer;
     }
@@ -22,6 +23,7 @@ const aNRefLipidesSat = 20;
 const aNRefFibres = 28;
 const aNRefSucres = 100;
 const aNRefSodium = 2300;
+const aNRefPotassium = 5000;
 const aNRefCalcium = 1300;
 const aNRefFer = 18;
 class valeurQuotidienne {
@@ -31,6 +33,7 @@ class valeurQuotidienne {
         this.vqFibres = Math.round((aliment.fibres / aNRefFibres) * 100);
         this.vqSucres = Math.round((aliment.sucres / aNRefSucres) * 100);
         this.vqSodium = Math.round((aliment.sodium / aNRefSodium) * 100);
+        this.vqPotassium = Math.round((aliment.potassium / aNRefPotassium) * 100);
         this.vqCalcium = Math.round((aliment.calcium / aNRefCalcium) * 100);
         this.vqFer = Math.round((aliment.fer / aNRefFer) * 100);
     }
@@ -48,11 +51,12 @@ function assignationVariables() {
     var proteines = document.getElementById("protéines").value;
     var cholesterol = document.getElementById("cholestérol").value;
     var sodium = document.getElementById("sodium").value;
+    var potassium = document.getElementById("potassium").value;
     var calcium = document.getElementById("calcium").value;
     var fer = document.getElementById("fer").value;
 
     var aliment = new Aliment(quantite, calories, lipides, grasSat, 
-        grasTrans, glucides, fibres, sucres, proteines, cholesterol, sodium, calcium, fer);
+        grasTrans, glucides, fibres, sucres, proteines, cholesterol, sodium, potassium, calcium, fer);
 
     localStorage.setItem("aliment", JSON.stringify(aliment));
     localStorage.setItem("valeurQuotidienne", JSON.stringify(new valeurQuotidienne(aliment)));
