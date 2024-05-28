@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8"/>
-		<title>Valeur nutritive</title>
-		<link rel="stylesheet" type="text/css" href="tableau.css"/>
-	</head>
-    
-	<body>
-        <table>
-            <tr>
-                <th id="title" colspan="2">Nutrition Facts <br>Valeur nutritive</th>
-			</tr>
-			<tr>
-                <td id="portion" colspan="2"></td>
-			</tr>
-			<tr>
-                <td><span id="calories"></span></td>
-				<td class="vq" id="titleVq">% Daily Value*<br>% valeur quotidienne*</td>
-			</tr>
-			<tr>
-                <td class="nutriment" id="lipides"></td>
-				<td class="vq" id="lipidesVQ"></td>
-			</tr>
-			<tr>
-                <td class="infoSup" id="grasSat"></td>
-				<td class="vq" id="grasSatVQ" rowspan="2"></td>
-			</tr>
-			<tr class="derniere">
-                <td class="infoSup" id="grasTrans"></td>
-			</tr>
-			<tr>
-                <td class="nutriment" id="glucides"></td>
-			</tr>
-			<tr>
-                <td class="infoSup" id="fibres"></td>
-				<td class="vq" id="fibresVQ"></td>
-			</tr>
-			<tr class="derniere">
-                <td class="infoSup" id="sucres"></td>
-				<td class="vq" id="sucresVQ"></td>
-			</tr>
-			<tr>
-                <td colspan="2" class="nutriment derniere" id="proteines"></td>
-			</tr>
-			<tr>
-                <td colspan="2" class="nutriment derniere" id="cholesterol"></td>
-			</tr>
-			<tr class="dernierNutriment">
-                <td class="nutriment" id="sodium"></td>
-				<td class="vq" id="sodiumVQ"></td>
-			</tr>
-			<tr class="derniere">
-                <td id="potassium"></td>
-				<td class="vq" id="potassiumVQ"></td>
-			</tr>
-			<tr class="derniere">
-                <td id="calcium"></td>
-				<td class="vq" id="calciumVQ"></td>
-			</tr>
-			<tr class="dernierNutriment">
-                <td id="fer"></td>
-				<td class="vq" id="ferVQ"></td>
-			</tr>
-			<tr>
-                <td colspan="2" class="infoFin">*5% or less is <strong>a little</strong>, 15 % or more is <strong>a lot</strong><br>*5% ou moins c'est <strong>peu<strong>, 15 % ou plus c'est <strong>beaucoup</strong></td>
-			</tr>
-		</table>
-        <script type="text/javascript" src="insertions.js"></script>
-	</body>
-    </html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Valeur nutritive</title>
+	<link rel="stylesheet" type="text/css" href="tableau.css" />
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th id="title" colspan="2">Nutrition Facts <br>Valeur nutritive</th>
+		</tr>
+		<tr>
+			<td id="portion" colspan="2"></td>
+		</tr>
+		<tr>
+			<td><span id="calories"></span></td>
+			<td class="vq" id="titleVq">% Daily Value*<br>% valeur quotidienne*</td>
+		</tr>
+		<tr>
+			<td class="nutriment" id="lipides"></td>
+			<td class="vq" id="lipidesVQ"></td>
+		</tr>
+		<tr>
+			<td class="infoSup" id="grasSat"></td>
+			<td class="vq" id="grasSatVQ" rowspan="2"></td>
+		</tr>
+		<tr class="derniere">
+			<td class="infoSup" id="grasTrans"></td>
+		</tr>
+		<tr>
+			<td class="nutriment" id="glucides"></td>
+		</tr>
+		<tr>
+			<td class="infoSup" id="fibres"></td>
+			<td class="vq" id="fibresVQ"></td>
+		</tr>
+		<tr class="derniere">
+			<td class="infoSup" id="sucres"></td>
+			<td class="vq" id="sucresVQ"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="nutriment derniere" id="proteines"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="nutriment derniere" id="cholesterol"></td>
+		</tr>
+		<tr class="dernierNutriment">
+			<td class="nutriment" id="sodium"></td>
+			<td class="vq" id="sodiumVQ"></td>
+		</tr>
+		<tr class="derniere">
+			<td id="potassium"></td>
+			<td class="vq" id="potassiumVQ"></td>
+		</tr>
+		<tr class="derniere">
+			<td id="calcium"></td>
+			<td class="vq" id="calciumVQ"></td>
+		</tr>
+		<tr class="dernierNutriment">
+			<td id="fer"></td>
+			<td class="vq" id="ferVQ"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="infoFin">*5% or less is <strong>a little</strong>, 15 % or more is <strong>a
+					lot</strong><br>*5% ou moins c'est <strong>peu<strong>, 15 % ou plus c'est <strong>beaucoup</strong>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<input type="button" onclick="window.print()" value="🖨️">
+	<script type="text/javascript" src="insertions.js"></script>
+</body>
+
+</html>
