@@ -1,5 +1,7 @@
 var aliment = JSON.parse(localStorage.getItem("aliment"));
+var valeurQuotidienne = JSON.parse(localStorage.getItem("valeurQuotidienne"));
 
+// Quantités
 remplir("portion", "Per " + aliment.quantite + "g<br>Pour " + aliment.quantite + "g");
 remplir("calories", "Calories " + aliment.calories);
 remplir("lipides", "Fat / Lipides " + aliment.lipides + "g");
@@ -13,6 +15,14 @@ remplir("cholesterol", "Cholesterol / Cholestérol " + aliment.cholesterol + "mg
 remplir("sodium", "Sodium " + aliment.sodium + "mg");
 remplir("calcium", "Calcium " + aliment.calcium + "mg");
 remplir("fer", "Iron / Fer " + aliment.fer + "mg");
+// Valeurs quotidiennes
+remplir("lipidesVQ", valeurQuotidienne.vqLipides + "%");
+remplir("grasSatVQ", valeurQuotidienne.vqLipidesSat + "%");
+remplir("fibresVQ", valeurQuotidienne.vqFibres + "%");
+remplir("sucresVQ", valeurQuotidienne.vqSucres + "%");
+remplir("sodiumVQ", valeurQuotidienne.vqSodium + "%");
+remplir("calciumVQ", valeurQuotidienne.vqCalcium + "%");
+remplir("ferVQ", valeurQuotidienne.vqFer + "%");
 
 function remplir(ID, message) {
     document.getElementById(ID).innerHTML = message;

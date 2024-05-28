@@ -26,13 +26,13 @@ const aNRefCalcium = 1300;
 const aNRefFer = 18;
 class valeurQuotidienne {
     constructor(aliment) {
-        this.vqLipides = (aliment.lipides / aNRefLipides) * 100;
-        this.vqLipidesSat = ((aliment.grasSat + aliment.grasTrans) / aNRefLipidesSat) * 100;
-        this.vqFibres = (aliment.fibres / aNRefFibres) * 100;
-        this.vqSucres = (aliment.sucres / aNRefSucres) * 100;
-        this.vqSodium = (aliment.sodium / aNRefSucres) * 100;
-        this.vqCalcium = (aliment.calcium / aNRefCalcium) * 100;
-        this.vqFer = (aliment.fer / aNRefFer) * 100;
+        this.vqLipides = Math.round((aliment.lipides / aNRefLipides) * 100);
+        this.vqLipidesSat = Math.round(((parseFloat(aliment.grasSat) + parseFloat(aliment.grasTrans)) / aNRefLipidesSat) * 100);
+        this.vqFibres = Math.round((aliment.fibres / aNRefFibres) * 100);
+        this.vqSucres = Math.round((aliment.sucres / aNRefSucres) * 100);
+        this.vqSodium = Math.round((aliment.sodium / aNRefSodium) * 100);
+        this.vqCalcium = Math.round((aliment.calcium / aNRefCalcium) * 100);
+        this.vqFer = Math.round((aliment.fer / aNRefFer) * 100);
     }
 }
 
