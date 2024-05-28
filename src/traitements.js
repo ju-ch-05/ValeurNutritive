@@ -28,9 +28,10 @@ function assignationVariables() {
             this.cholesterol = cholesterol;
             this.sodium = sodium;
             this.calcium = calcium;
+            this.fer = fer;
         }
     }
     
     localStorage.setItem("aliment", JSON.stringify(new Aliment(quantite, calories, lipides, grasSat, 
-        grasTrans, glucides, fibres, sucres, proteines, cholesterol, sodium, calcium)));
+        grasTrans, glucides, fibres, sucres, proteines, cholesterol, sodium, calcium, fer)));
 }
