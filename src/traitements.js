@@ -27,4 +27,3 @@ function assignationVariables() {
     calcium = document.getElementById("calcium").value;
     fer = document.getElementById("fer").value;
 }
-console.log(quantite);

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+table {
+	width: auto;
+	height: 450px;
+	border-collapse: collapse;
+	border: 2px solid black;
+}
+#title {
+	text-align: left;
+	font-size: 25px;
+}
+#portion {
+	border-bottom: 1px solid black
+}
+
+#calories {
+	font-weight: bold;
+	font-size: 20px;
+	border-bottom: 3px solid black;
+}
+#titleVq {
+	font-weight: bold;
+	font-size: 10px;
+}
+.vq {
+	text-align: right;
+}
+.derniere {
+	border-bottom: 1px solid black;
+}
+.nutriment {
+	font-weight: bold;
+}
+.infoSup {
+	position: relative;
+	left: 10px;
+}
+.infoFin {
+	font-size: 10px;
+}
+.dernierNutriment {
+	border-bottom: 3px solid black;
+}
