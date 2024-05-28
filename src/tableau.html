@@ -4,6 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>Valeur nutritive</title>
 		<link rel="stylesheet" type="text/css" href="tableau.css"/>
+        <script type="text/javascript" src="traitements.js"></script>
 	</head>
 
 	<body>
@@ -12,54 +13,50 @@
 				<th id="title" colspan="2">Nutrition Facts <br>Valeur nutritive</th>
 			</tr>
 			<tr>
-				<td id="portion" colspan="2">Per ½ cup (50 g)<br>pour ½  tasse (50 g)</td>
+				<td id="portion" colspan="2"></td>
 			</tr>
 			<tr>
 				<td><span id="calories">Calories 300</span></td>
 				<td class="vq" id="titleVq">% Daily Value*<br>% valeur quotidienne*</td>
 			</tr>
 			<tr>
-				<td class="nutriment">Fat / Lipides 26 g</td>
+				<td class="nutriment" id="lipides">Fat / Lipides 26 g</td>
 				<td class="vq">35 %</td>
 			</tr>
 			<tr>
-				<td class="infoSup">Saturated / saturés 3.5 g</td>
+				<td class="infoSup" id="grasSat">Saturated / saturés 3.5 g</td>
 				<td class="vq" rowspan="2">18 %</td>
 			</tr>
 			<tr class="derniere">
-				<td class="infoSup">+ Trans / trans 0g</td>
+				<td class="infoSup" id="grasTrans">+ Trans / trans 0g</td>
 			</tr>
 			<tr>
-				<td class="nutriment">Carbohydrate / Glucides 12 g</td>
+				<td class="nutriment" id="glucides">Carbohydrate / Glucides 12 g</td>
 			</tr>
 			<tr>
-				<td class="infoSup">Fibre / Fibres 3 g</td>
+				<td class="infoSup" id="fibres">Fibre / Fibres 3 g</td>
 				<td class="vq">11 %</td>
 			</tr>
 			<tr class="derniere">
-				<td class="infoSup">Sugars / Sucres 3 g</td>
+				<td class="infoSup" id="sucres">Sugars / Sucres 3 g</td>
 				<td class="vq">3 %</td>
 			</tr>
 			<tr>
-				<td colspan="2" class="nutriment derniere">Protein / Protéines 9 g</td>
+				<td colspan="2" class="nutriment derniere" id="proteines">Protein / Protéines 9 g</td>
 			</tr>
 			<tr>
-				<td colspan="2" class="nutriment derniere">Cholesterol / Cholestérol 0 mg</td>
+				<td colspan="2" class="nutriment derniere" id="cholesterol">Cholesterol / Cholestérol 0 mg</td>
 			</tr>
 			<tr class="dernierNutriment">
-				<td class="nutriment">Sodium 3 mg</td>
+				<td class="nutriment" id="sodium">Sodium 3 mg</td>
 				<td class="vq">1 %</td>
 			</tr>
 			<tr class="derniere">
-				<td>Potassium 350 mg</td>
-				<td class="vq">7 %</td>
-			</tr>
-			<tr class="derniere">
-				<td>Calcium 75 mg</td>
+				<td id="calcium">Calcium 75 mg</td>
 				<td class="vq">6 %</td>
 			</tr>
 			<tr class="dernierNutriment">
-				<td>Iron / Fer 2.25 mg</td>
+				<td id="fer">Iron / Fer 2.25 mg</td>
 				<td class="vq">13 %</td>
 			</tr>
 			<tr>

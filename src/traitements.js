@@ -27,3 +27,7 @@ function assignationVariables() {
     calcium = document.getElementById("calcium").value;
     fer = document.getElementById("fer").value;
 }
+
+ function remplirTableau() {
+    document.getElementById("portion").innerHTML = "Per "+ quantite + " g<br>pour " + quantite + " g";
+ }
