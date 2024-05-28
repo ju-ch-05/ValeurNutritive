@@ -1,2 +1,2 @@
 # ValeurNutritive
-Ce site web sert à créer automatiquement des étiquettes de valeurs nutritives. Les pourcentages de valeurs quotidiennes sont calculés automatiquement.
+Ce site web sert à créer automatiquement des étiquettes de valeur nutritive. Le pourcentage des valeurs quotidiennes sont calculés automatiquement selon le tableau des valeurs quotidiennes émit par Santé Canada via ce lien : https://www.canada.ca/fr/sante-canada/services/documents-techniques-exigences-etiquetage/tableau-valeurs-quotidiennes/etiquetage-nutritionnel.html.
